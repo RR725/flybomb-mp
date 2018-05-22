@@ -1,0 +1,13 @@
+<view class="home">
+  <picker bindchange="bindSubjectChange" range-key="{{'name'}}" value="{{indexSubject}}" range="{{subjects}}">
+    <view class="picker">
+      {{subjects[indexSubject].name}}
+    </view>
+  </picker>
+
+  <picker bindchange="bindTypeChange" range-key="{{'type_desc'}}" value="{{indexType}}" range="{{types}}">
+    <view class="picker">
+      {{types[indexType].type_desc}}
+    </view>
+  </picker>
+</view>

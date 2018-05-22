@@ -1,0 +1,7 @@
+<view class="home">
+  <picker bindchange="bindPickerChange" range-key="{{'name'}}" value="{{index}}" range="{{subjects}}">
+    <view class="picker">
+      {{subjects[index].name}}
+    </view>
+  </picker>
+</view>
